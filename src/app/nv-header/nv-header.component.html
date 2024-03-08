@@ -1,12 +1,12 @@
 <mat-toolbar class="nv-toolbar">
   <div class="nv-toolbar-container">
     <button
-      mat-icon-button="Example-icon"
+      mat-icon-button
       aria-label="Example icon-button with menu icon"
-      (click)="(opened != opened)"
+      (click)="onClick()"
     >
-      <mat-icon *ngIf="!opened">menu</mat-icon>
-      <mat-icon *ngIf="opened">close</mat-icon>
+      <mat-icon *ngIf="!isDrawerOpen">menu</mat-icon>
+      <mat-icon *ngIf="isDrawerOpen">close</mat-icon>
     </button>
     <span class="nv-toolbar-container__title">Narcissism Voyage</span>
     <div class="nv-toolbar-container__button">

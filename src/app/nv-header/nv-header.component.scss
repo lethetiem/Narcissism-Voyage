@@ -1,8 +1,7 @@
 .nv-toolbar{
     display: block;
     background-color: transparent;
-    position: relative;
-    padding: 0;
+    justify-content: center;
     
 }
 
@@ -10,7 +9,7 @@
     display: grid;
 
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 21px;
     max-width: 100vw;
 
     &__title{

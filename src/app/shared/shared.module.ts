@@ -6,6 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { RouterModule } from '@angular/router';
 
 import { NvHeaderComponent } from '../nv-header/nv-header.component';
 import { NvHomeComponent } from '../nv-home/components/nv-home.component';
@@ -19,6 +20,7 @@ import { NvHomeComponent } from '../nv-home/components/nv-home.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    RouterModule
   ],
   exports: [
     NvHeaderComponent,

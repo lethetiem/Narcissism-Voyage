@@ -1,10 +1,17 @@
 <div class="home-container">
-  <app-nv-header class="home-container__header"></app-nv-header>
-  <mat-drawer-container>
-    <mat-drawer #drawer mode="side">
-      <mat-list role="list">
+  <app-nv-header
+    (isDrawerOpenEvent)="receiveIsDrawerOpenValue($event)"
+    class="home-container__header"
+  ></app-nv-header>
+  <mat-drawer-container class="home-container__drawer-container">
+    <mat-drawer #drawer mode="over" [(opened)]="isDrawerOpen">
+      <mat-list role="list" class="home-container__drawer-container__list">
         <mat-list-item><a href="">Home</a></mat-list-item>
       </mat-list>
     </mat-drawer>
+    <mat-drawer-content>
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
   </mat-drawer-container>
+  <footer class="home-container__footer"></footer>
 </div>
